@@ -1,4 +1,4 @@
-Este é um mini projeto criado com ideia conjunta de aluno e professor, para fins didáticos.
+Este é um mini projeto para fins didáticos, criado a partir de uma ideia conjunta entre aluno e professor.
 
 Programa com multifuncionalidades, sendo elas:
 
