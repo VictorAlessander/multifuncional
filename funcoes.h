@@ -182,21 +182,23 @@ float notas_alunos(){
 
     /* Insere os nomes na matriz nomes */
     for(x = 0; x < 6; x++){
-        printf("Aluno: ");
-        fflush(stdin);
+        printf("Aluno [%d]: ", x);
         fgets(nomes[x], 30, stdin);
+        limpar_buffer();
     }
 
     /* Insere os valores na matriz prova1 */
     for(x = 0; x < 6; x++){
-        printf("Elemento [%d]: ", x);
+        printf("Primeira nota [%d]: ", x);
         scanf("%f", &prova1[x]);
+        limpar_buffer();
     }
 
     /* Insere os valores na matriz prova2 */
     for(x = 0; x < 6; x++){
-        printf("Elemento [%d]: ", x);
+        printf("Segunda nota [%d]: ", x);
         scanf("%f", &prova2[x]);
+        limpar_buffer();
     }
 
     /* Insere a soma da matriz prova1 + prova2 na matriz media */
