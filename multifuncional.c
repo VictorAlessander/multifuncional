@@ -19,7 +19,7 @@ float funcionalidades_aluno(){
     float num1, num2;
     int valor1, opcao, operacao;
 
-    do{
+    while(1){
         menu_alunos();
         scanf("%d", &opcao);
         limpar_buffer();
@@ -27,7 +27,7 @@ float funcionalidades_aluno(){
         switch(opcao){
         case 0:
             printf("[*] Programa finalizado\n");
-            break;
+            exit(0);
 
         case 1:
             printf("\nInsira o valor: ");
@@ -90,15 +90,14 @@ float funcionalidades_aluno(){
                 break;
             }
         }
-
-    }while(opcao != 0);
+    }
 }
 
 float funcionalidades_professor(){
     int valor1, opcao, operacao;
     float num1, num2;
 
-    do{
+    while(1){
         menu_professor();
         scanf("%d", &opcao);
         limpar_buffer();
@@ -106,7 +105,7 @@ float funcionalidades_professor(){
         switch(opcao){
         case 0:
             printf("[*] Programa finalizado\n");
-            break;
+            exit(0);
 
         case 1:
             printf("\nInsira o valor: ");
@@ -173,8 +172,7 @@ float funcionalidades_professor(){
                 break;
             }
         }
-
-    }while(opcao != 0);
+    }
 }
 
 int main(){
