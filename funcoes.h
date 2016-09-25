@@ -216,10 +216,12 @@ float notas_alunos(){
         }
     }
 
-    system("cls");
     /* Exibe a situação do aluno por intermédio do vetor situação */
+    system("cls");
+    printf("--------------------\n");
     for(x = 0; x < 6; x++){
         printf("Aluno: %s\n", nomes[x]);
+        printf("Média: %.2f\n", media[x]);
         printf("Situacao: %s\n", situacao[x]);
         printf("--------------------\n");
     }
