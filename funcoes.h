@@ -298,7 +298,7 @@ void limpar_buffer(){
     #endif // __linux__
 
     #ifdef __WIN32__
-        fflush(stdin);
+        setbuf(stdin, NULL);
     #endif // __WIN32__
 }
 
